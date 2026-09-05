@@ -1,0 +1,66 @@
+	Retail Network Detection Rules
+
+Rule 1: ICMP Reconnaissance
+
+Filter: "icmp"
+
+Purpose:
+Identify unusual ICMP activity that may indicate network reconnaissance.
+
+Evidence:
+Source IP, destination IPs, packet frequency.
+
+Severity:
+Medium
+
+Rule 2: DNS Anomaly
+
+Filter: "dns"
+
+Purpose:
+Identify unusual DNS request behavior, including frequent or suspicious DNS queries.
+
+Evidence:
+Source IP, requested domains, query frequency.
+
+Severity:
+Medium
+
+Rule 3: HTTP Traffic Monitoring
+
+Filter: "http"
+
+Purpose:
+Identify unusual or potentially suspicious HTTP traffic on the retail network.
+
+Evidence:
+Source IP, destination IP, requested URLs, packet frequency.
+
+Severity:
+Medium
+
+Rule 4: TCP Port Scanning
+
+Filter: "tcp"
+
+Purpose:
+Identify unusual TCP connection attempts that may indicate port scanning or reconnaissance.
+
+Evidence:
+Source IP, destination IP, destination ports, number of connection attempts.
+
+Severity:
+High
+
+Rule 5: ARP Anomaly
+
+Filter: "arp"
+
+Purpose:
+Identify unusual ARP activity that may indicate network discovery or ARP spoofing.
+
+Evidence:
+Source MAC address, source IP, destination IP, frequency of ARP packets.
+
+Severity:
+High
